@@ -232,7 +232,7 @@ img {
   justify-content: space-between;
 }
 .box {
-  width: 200%; /* Adjusted width to accommodate space between divs */
+  width: 100%; /* Adjusted width to accommodate space between divs */
  
   /* Optional, includes padding in the width calculation */
  /* Optional, just for visualization */
