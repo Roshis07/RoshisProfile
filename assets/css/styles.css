@@ -26,7 +26,7 @@
   --z-fixed: 100;
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 768px) {
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
@@ -137,6 +137,11 @@ img {
     transition: .5s;
   }
 }
+.about {
+  text-align: justify; /* Justify the text inside the paragraph */
+  margin: 10px auto; /* Add vertical margin of 10px and horizontal margin of 'auto' */
+  color: #0e0e0e;
+}
 
 .nav__item {
   margin-bottom: var(--mb-4);
@@ -194,8 +199,12 @@ img {
   padding: 4rem 0 5rem;
 }
 
+
+
+
+
 .home__data {
-  align-self: center;
+  align-self: flex-end;
 }
 
 .home__title {
@@ -204,7 +213,7 @@ img {
 }
 
 .home__title-color {
-  color: var(--first-color);
+  color:#8B0000;
 }
 
 .home__social {
@@ -218,17 +227,29 @@ img {
   font-size: 1.5rem;
   color: var(--second-color);
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  width: 200%; /* Adjusted width to accommodate space between divs */
+ 
+  /* Optional, includes padding in the width calculation */
+ /* Optional, just for visualization */
+}
 
 .home__social-icon:hover {
   color: var(--first-color);
 }
 
 .home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  left: 0;
+  top: 40px; /* Remove the space between 40 and px */
+  margin-top: 20px;
   width: 260px;
 }
+
 
 .home__blob {
   fill: var(--first-color);
@@ -241,7 +262,7 @@ img {
 /*BUTTONS*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: green;
   color: #fff;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
@@ -286,6 +307,25 @@ img {
   margin-bottom: var(--mb-4);
 }
 
+
+
+
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.abouteme {
+  width: 70%; /* You can adjust the width as needed */
+  margin-left: 30%;
+  margin-right: 0; /* Set margin-right to 0 to remove any extra space on the right */
+}
+
+.abouteme p {
+  text-align: justify;
+}
 .skills__data {
   display: flex;
   justify-content: space-between;
