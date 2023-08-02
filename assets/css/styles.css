@@ -568,3 +568,30 @@ img {
     width: 450px;
   }
 }
+.container1 {
+  display: flex;
+  align-items: center;
+  margin-top: 50px; 
+  margin-left: 100px; /* Centers items vertically */
+}
+
+.whoimage {
+  flex: 0 0 auto; /* Keeps the image from growing or shrinking */
+  margin-right: 20px;
+  max-width: 240px; /* Set the maximum width you want */
+  max-height: 200 /* Add some space between the image and the subtitle */
+}
+
+.about__subtitle {
+  flex: 1; /* Allows the subtitle to grow and take remaining space */
+}
+
+
+
+.who {
+  margin-top: 10px;
+  text-align: center; /* Center the text horizontally */
+  color: #336699; /* Set a good color (you can change #336699 to any valid color code) */
+  font-size: 32px; /* Set the font size to 32 pixels */
+  font-weight: bold; /* Make the text bold */
+}
